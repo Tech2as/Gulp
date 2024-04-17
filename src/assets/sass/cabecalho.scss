@@ -1,0 +1,58 @@
+header.cabecalho {
+    display: flex;
+    align-items: center;
+    background-color: #076A75;
+
+    box-shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.1), 0 2px 49px 0 rgba(0, 0, 0, 0.06);
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.cabecalho i {
+    color: white;
+    height: 80px;
+    padding-top: 28px;
+}
+
+.box {
+    flex: 1; /* Faz com que cada caixa tenha a mesma largura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .box1 { background-color: #FF5733; }
+  .box2 { background-color: #C70039; }
+  .box3 { background-color: #900C3F; }
+  .box4 { background-color: #581845; }
+
+header.cabecalho input {
+    flex-grow: 10;
+    margin-right: 15px;
+    border-radius: 7px;
+    border: 1px solid #CCC;
+    padding: 8px;
+    font-size: 18px;
+    outline: none;
+}
+
+
+
+@media(max-width: $largura-sm-max) {
+    header.cabecalho {
+        justify-content: flex-end;
+    }
+
+    header.cabecalho input  {
+        display: none;
+    }
+}
+
+@media(max-width: $largura-xs-max) {
+    header.cabecalho {
+        justify-content: center;
+    }
+}
